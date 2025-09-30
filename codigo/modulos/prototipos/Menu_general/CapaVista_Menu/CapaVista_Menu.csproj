@@ -34,8 +34,15 @@
     <Reference Include="CapaControlador_Menu">
       <HintPath>..\CapaControlador_Menu\bin\Debug\CapaControlador_Menu.dll</HintPath>
     </Reference>
-    <Reference Include="CapaVista_Seguridad">
+    <Reference Include="CapaVista_Seguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\componentes\seguridad\prototipo_v1\CapaVista_Seguridad\bin\Debug\CapaVista_Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="Capa_Controlador_Navegador">
+      <HintPath>..\..\..\..\..\..\Segundo Proyecto\asis2k25p2\codigo\componentes\navegador\WindowsFormsApp1\CapaVistaNavegador\bin\Debug\Capa_Controlador_Navegador.dll</HintPath>
+    </Reference>
+    <Reference Include="Capa_Vista_Navegador">
+      <HintPath>..\..\..\..\..\..\Segundo Proyecto\asis2k25p2\codigo\componentes\navegador\WindowsFormsApp1\CapaVistaNavegador\bin\Debug\Capa_Vista_Navegador.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,17 +56,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_IdentificacionAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_IdentificacionAlumno.Designer.cs">
+      <DependentUpon>Frm_IdentificacionAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuGeneral.Designer.cs">
       <DependentUpon>MenuGeneral.cs</DependentUpon>
     </Compile>
+    <Compile Include="Navegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navegador.Designer.cs">
+      <DependentUpon>Navegador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Frm_IdentificacionAlumno.resx">
+      <DependentUpon>Frm_IdentificacionAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuGeneral.resx">
       <DependentUpon>MenuGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navegador.resx">
+      <DependentUpon>Navegador.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

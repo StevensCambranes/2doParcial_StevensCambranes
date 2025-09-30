@@ -114,6 +114,7 @@ namespace CapaVista_Seguridad
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Dgv_Bitacora);
             this.Name = "frmBitacora";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBitacora";
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Bitacora)).EndInit();
             this.ResumeLayout(false);
