@@ -8,9 +8,7 @@ namespace WindowsFormsApp1
 {
     static class Program
     {
-        /// <summary>
-        /// Punto de entrada principal para la aplicación.
-        /// </summary>
+        // 0901-22-940 Edwin Stevens Cambarnes Mendizabal estuvo aqui
         [STAThread]
         static void Main()
         {
